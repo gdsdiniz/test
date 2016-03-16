@@ -1,0 +1,5 @@
+- Favor alterar informações do bd, no arquivo persistence.xml
+
+- Acessar sistema através da url :  http://localhost:<sua porta>/fiveware-test-web/cadastro
+
+- Caso seja necessário para consulta, inclui o script da tabela no arquivo "script da tabela.txt"

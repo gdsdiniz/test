@@ -42,7 +42,6 @@
          height: 30px;  
     }  
     </style>  
-<title>Insert title here</title>
 </head>
 <body>
 	<spring:form id="cadastroForm" commandName="cadastroContato" method="get">
@@ -51,8 +50,9 @@
 			<td>Favorito <spring:checkbox path="favorito" value="true"/></td></tr>
 			<tr><td>Tipo : <spring:select path="tipo" items="${tipos}"/></td></tr> 
 				
-			<tr><td>Sexo : Masculino <input type="radio" id="sexo" value="M" checked="checked" /></td> 
-				<td>Feminino <input type="radio" id="sexo" value="F"/></td></tr>
+			<tr><td>Sexo : Masculino <input type="radio" id="sexo" name="sexo" value="M" checked="checked" /></td> 
+				<td>Feminino <input type="radio" id="sexo" name="sexo" value="F"/></td></tr>
+				
 			
 			<tr><td></td></tr>
 			
