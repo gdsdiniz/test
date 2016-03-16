@@ -10,9 +10,9 @@
 			<property name="javax.persistence.jdbc.password" value="1234"/>
 			
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.schema-generation.create-database-schemas" value="true"/>
+			<property name="javax.persistence.schema-generation.create-database-schemas" value="false"/>
 			
-				 <!--  propriedades do hibernate -->
+			<!--  propriedades do hibernate -->
 		   <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 		   <property name="hibernate.show_sql" value="true" />
 		   <property name="hibernate.format_sql" value="true" />

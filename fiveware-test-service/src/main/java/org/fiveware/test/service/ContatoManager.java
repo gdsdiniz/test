@@ -1,10 +1,9 @@
 package org.fiveware.test.service;
 
-import java.util.List;
-
-import org.fiveware.test.dao.ContatosDao;
-import org.fiveware.test.forms.Contato;
+import org.fiveware.test.business.ContatoBusiness;
+import org.fiveware.test.dao.AgendaDao;
 import org.fiveware.test.model.ContatoDao;
+import javax.persistence.Entity;
 
 /**
  * Faz a comunicação entre o controle e o model
@@ -17,20 +16,15 @@ public class ContatoManager {
 	 * 
 	 * @param contato
 	 */
-	void salvarContato(Contato contato) {
+	public void salvarContato(ContatoBusiness contato) {
 		
 		ContatoDao contatoDao = new ContatoDao(contato.getNome(),
 											   contato.isFavorito(),
 											   contato.getTipo(),
 											   contato.getSexo());
 		
-		new ContatosDao().salvar(contatoDao);
+		new AgendaDao().salvar(contatoDao);
 		
 	}
-	
-	/*
-	private List<ContatoDao> listar() {
 		
-	}*/
-	
 }

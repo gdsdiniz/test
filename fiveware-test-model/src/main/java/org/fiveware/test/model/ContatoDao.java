@@ -1,10 +1,10 @@
 package org.fiveware.test.model;
-       
+      
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="Contato")
 public class ContatoDao {
  	
 	@Id @GeneratedValue
@@ -14,6 +14,10 @@ public class ContatoDao {
 	private String tipo;
 	private char sexo;
 
+	
+	public ContatoDao(){
+	}
+	
 	public ContatoDao(String nome, boolean favorito, String tipo, char sexo) {
 		this.nome = nome;
 		this.favorito = favorito;

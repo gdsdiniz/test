@@ -1,14 +1,21 @@
-package org.fiveware.test.forms;
-       
+package org.fiveware.test.business;
 
-
-public class Contato {
-
+public class ContatoBusiness {
+	
 	private String nome;
 	private boolean favorito;
 	private String tipo;
 	private char sexo;
 
+	public ContatoBusiness(String nome, boolean favorito, String tipo, char sexo) {
+		this.nome = nome;
+		this.favorito = favorito;
+		this.tipo = tipo;
+		this.sexo = sexo;
+	}
+	
+	public ContatoBusiness() {
+	}
 
 	public String getNome() {
 		return nome;
@@ -26,7 +33,6 @@ public class Contato {
 		this.favorito = favorito;
 	}
 
-
 	public char getSexo() {
 		return sexo;
 	}
@@ -42,8 +48,6 @@ public class Contato {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	
-	
-	
+
 	
 }

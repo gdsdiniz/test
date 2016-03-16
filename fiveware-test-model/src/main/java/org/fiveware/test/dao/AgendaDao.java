@@ -3,15 +3,13 @@ package org.fiveware.test.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-import org.fiveware.test.model.ContatoDao;
-
-public class ContatosDao {
+public class AgendaDao {
 
 	/**
 	 * Salva informações do contato no BD
 	 * @param contato
 	 */
-	public void salvar(ContatoDao contato) {
+	public void salvar(Object contato) {
 		
 		EntityManager em = JPAUtil.getEntityManager();		
 		
